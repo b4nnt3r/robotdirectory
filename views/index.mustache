@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Robot Directory</title>
+</head>
+
+<body>
+  <h1>Find a robot</h1>
+  <p>{{people.length}}</p>
+
+    {{ #robots }}
+    <img src={{ avatar }}>
+    <span><p>{{ name }}</p></span>
+    <p>{{ job }}</p>
+    <p>{{ company }}</p>
+    <p>{{ /robots }}</p>
+  <
+</body>
+
+</html>

@@ -10,12 +10,16 @@ app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
 
-app.get('/index', function(request, response){
-  response.render('index', { robots: robot.users});
+app.get('/index', function(request, response) {
+  response.render('index', {
+    robots: robot.users
+  });
 });
 
-app.get('/single', function(request, response){
-  response.render('index', { robots: robot.users});
+app.get('/details', function(request, response) {
+  response.render('details', {
+    robots: robot.users
+  });
 });
 
 app.get('/index/:id', function(request, response) {

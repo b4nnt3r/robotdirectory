@@ -10,20 +10,28 @@ body {
 }
 
 .results {
-  border: 1px solid lightgrey;
-  width: 250px;
+  width: 1000px;
   margin: 15px;
   padding: 5px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
 }
-
+.topbar {
+  display: flex;
+  justify-content: center;
+}
 .details {
   text-align: center;
 }
 
+p {
+  margin: auto;
+}
+
 span {
-  color: #50AAD9;
-  font-size: 1.5em;
+  color: #3F4E5C;
+  font-size: 4.5em;
+}
+
+img {
+  border: 1px solid lightgrey;
+  border-radius: 50%;
 }

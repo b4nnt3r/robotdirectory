@@ -4,19 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>Robot Directory</title>
-</head>
+  <link rel="stylesheet" href="style.css" / </head>
 
-<body>
-  <h1>Find a robot</h1>
-  <p>{{people.length}}</p>
+  <body>
+    <div class="container">
+      {{ #robots }}
+      <div class="results">
+        <img src= {{ avatar }}>
+        <div class="details">
+        <span><p>{{ name }}</p></span>
+        <p>{{ job }}</p>
+        <p>{{ company }}</p>
+        </div>
+      </div>
+      <p>{{ /robots }}</p>
 
-    {{ #robots }}
-    <img src={{ avatar }}>
-    <span><p>{{ name }}</p></span>
-    <p>{{ job }}</p>
-    <p>{{ company }}</p>
-    <p>{{ /robots }}</p>
-  <
-</body>
+    </div>
+  </body>
 
 </html>

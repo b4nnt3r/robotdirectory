@@ -14,8 +14,10 @@
           <img src= {{ avatar }}>
           <div class="details">
             <span><p>{{ name }}</p></span>
-            <p>{{ address.city }}, {{ address.country }} | {{ job }}, {{ company }}</p>
-            <p>{{ email }} | {{ phone }}</p>
+            <div class="contact">
+              <p>{{ address.city }}, {{ address.country }} | {{ job }}, {{ company }}</p>
+              <p>{{ email }} | {{ phone }}</p>
+            </div>
           </div>
         </div>
         <div class="history">
@@ -29,7 +31,11 @@
             <tr>
               <th>Skills</th>
               <td>
-                <p>{{ skills }}</p>
+                <ul>
+                  <li>{{ skills.0 }}</li>
+                  <li>{{ skills.1 }}</li>
+                  <li>{{ skills.2 }}</li>
+                </ul>
               </td>
             </tr>
           </table>

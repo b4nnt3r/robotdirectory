@@ -35,9 +35,9 @@
               <th>Skills</th>
               <td>
                 <ul>
-                  <li>{{ skills.0 }}</li>
-                  <li>{{ skills.1 }}</li>
-                  <li>{{ skills.2 }}</li>
+                  {{ #skills }}
+                  <li>{{ . }}</li>
+                  {{ /skills }}
                 </ul>
               </td>
             </tr>

@@ -22,12 +22,6 @@ app.get('/details', function(request, response) {
   });
 });
 
-// app.get('/:username', function(request, response) {
-//   response.render('profile', {
-//     robots: robot.users
-//   });
-// });
-
 
 app.get('/:username', function (request, response) {
   const user = robot.users.find(function (user) { return user.username === request.params.username })

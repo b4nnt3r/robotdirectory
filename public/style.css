@@ -23,7 +23,18 @@ body {
   text-align: center;
 }
 
-span {
+
+h1 {
   color: #50AAD9;
   font-size: 1.5em;
+}
+
+h3 {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: #50AAD9;
+  font-size: 1.2em;
 }

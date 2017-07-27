@@ -10,7 +10,7 @@ app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
 
-app.get('/index', function(request, response) {
+app.get('/', function(request, response) {
   response.render('index', {
     robots: robot.users
   });
@@ -22,13 +22,17 @@ app.get('/details', function(request, response) {
   });
 });
 
-app.get('/index/:id', function(request, response) {
-  let person = robot.find(function(member) {
-    return member.name.toLowerCase() === request.params.id;
-  });
-  response.render('index', person)
-});
+// app.get('/:username', function(request, response) {
+//   response.render('profile', {
+//     robots: robot.users
+//   });
+// });
 
+
+app.get('/:username', function (request, response) {
+  const user = robot.users.find(function (user) { return user.username === request.params.username })
+    response.render('profile', { robots: user});
+  });
 
 
 app.listen(3000, function() {

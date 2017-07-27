@@ -14,10 +14,12 @@ body {
   margin: 15px;
   padding: 5px;
 }
+
 .topbar {
   display: flex;
   justify-content: center;
 }
+
 .details {
   text-align: center;
 }
@@ -26,14 +28,34 @@ body {
   text-align: left;
 }
 
+.afh {
+  color: red;
+  display: inline-flex;
+}
+
+.citywork {
+  display: inline-flex;
+
+}
+
+a {
+  text-decoration: none;
+}
+
 p {
   margin: auto;
   padding-left: 25px;
 }
 
-span {
+h1 {
   color: #3F4E5C;
-  font-size: 4.5em;
+  font-size: 2.5em;
+}
+
+h3 {
+  color: red;
+  padding-left: 10px;
+
 }
 
 img {

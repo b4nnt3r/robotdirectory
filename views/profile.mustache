@@ -8,16 +8,15 @@
 
   <body>
     <div class="container">
-      {{ #robots }}
+{{ #robots }}
       <div class="results">
         <div class="topbar">
           <img src= {{ avatar }}>
           <div class="details">
-            <h1><a href="/{{ username }}">{{ name }}</a></h1>
+            <h1><p><a href="/{{ username }}">{{ name }}</a></p></h1>
             <div class="contact">
               <div class="citywork">
-                <p>{{ #address.city }} {{ address.city }}, {{ /address.city }}{{ address.country }} | {{ #job }} {{ job }}, {{ company }} {{ /job }} {{ ^job }}
-                 <h3>Available For Hire</h3> {{ /job }}</p>
+                <span>{{ #address.city }} {{ address.city }}, {{ /address.city }}{{ address.country }} | {{ #job }}{{ job }}, {{ company }}{{ /job }}{{ ^job }}<p class="afh">Available For Hire {{ /job }}</p></span>
               </div>
               <p>{{ email }} | {{ phone }}</p>
             </div>
@@ -44,7 +43,7 @@
           </table>
         </div>
       </div>
-      {{ /robots }}
+{{ /robots }}
     </div>
   </body>
 
